@@ -8,3 +8,7 @@ def sumar(x, y):
 def restar(x, y):
     z = x - y
     return z
+
+def multiplicar(x, y):
+    z = x * y
+    return z
