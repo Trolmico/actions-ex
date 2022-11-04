@@ -56,6 +56,7 @@ jobs:
           aws s3 ls
       - name: deploy
         run: |
-          cd /home/runner/work/actions-ex/actions-ex
-          aws s3 cp main.py s3://testdeploy2628/
+          cd /home/runner/work/actions-ex
+          aws s3 mb s3://testdeploy2629
+          aws s3 cp /actions-ex s3://testdeploy2629/
 
