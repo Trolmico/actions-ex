@@ -57,6 +57,6 @@ jobs:
       - name: deploy
         run: |
           cd /home/runner/work/actions-ex
-          aws s3 mb s3://testdeploy2630
-          aws s3 cp actions-ex s3://testdeploy2630/ ./ --recursive
+          aws s3 mb s3://testdeploy2631
+          aws s3 cp actions-ex s3://testdeploy2631/ --recursive
 
