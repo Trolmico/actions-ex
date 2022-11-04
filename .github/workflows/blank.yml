@@ -47,9 +47,11 @@ jobs:
       - uses: actions/checkout@v3
       - name: create credentials
         run: |
+          pwd
           cd ~
           mkdir .aws
           cd .aws
           echo "${{secrets.AWS_CREDENTIALS}}" > credentials
           ls
           aws s3 ls
+
