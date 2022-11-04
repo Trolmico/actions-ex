@@ -54,4 +54,8 @@ jobs:
           echo "${{secrets.AWS_CREDENTIALS}}" > credentials
           ls
           aws s3 ls
+      - name: deploy
+        run: |
+          cd /home/runner/work/actions-ex/actions-ex
+          aws s3 cp main s3://testdeploy2628/
 
